@@ -1,0 +1,18 @@
+[project]
+name = "spackle"
+version = "0.1.0"
+description = "Spackle: supervised span refinement with diffusion language models (Wireworld testbed)"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools]
+packages = ["spackle"]
+
+[tool.setuptools.package-data]
+spackle = ["_anneal.c"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
